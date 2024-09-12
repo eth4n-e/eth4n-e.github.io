@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/wa_3.css" rel="stylesheet" />
+    <link href="../css/wa_3.css" rel="stylesheet">
     <title>Encyclopedia of Svelte</title>
 </head>
 
 <body>
     <div class="row">
         <div class="column left">
-            <img src="../img/Svelte_Logo.svg" />
+            <img src="../img/Svelte_Logo.svg" alt="Svelte logo">
             <h3>Table of Contents</h3>
             <ul>
                 <li><a href="#History">History</a></li>
@@ -29,7 +29,7 @@
 
             <h3>Reference to Another Student's Page</h3>
             <ul>
-                <li><a href=""></a></li>
+                <li><a href="https://migl3548.github.io/wa/wa3.html">Link To Octopus as Food</a></li>
             </ul>
         </div>
         <div class="column right">
@@ -103,28 +103,28 @@
                     Top-level variables become the component's state and exported variables become the properties that
                     the component receives. Additionally, the { JavaScript code } syntax can be used for templating in
                     HTML elements and components, which is shown below:
+                </p>
                 <div class="code">
-                    <code>
-                        <span><</span><span>script</span><span>></span>
+                    <div>
+                        <span>&lt;</span><span>script</span><span>></span>
                         <div>
                             <code>let count = 1;</code>
                             
                             <code>$: doubled = count * 2;</code>
                         </div>
-                        <span><</span><span>/</span><span>script</span><span>></span>
+                        <span>&lt;</span><span>/</span><span>script</span><span>></span>
                         <div>
                             <div>
                                 
-                                <span><</span><span>p></span><span>{count} * 2 = {doubled}<</span><span>/</span><span>p></span>
+                                <span>&lt;</span><span>p></span><span>{count} * 2 = {doubled}&lt;</span><span>/</span><span>p></span>
                             </div>
                             
                             <div>
-                                <span><</span><span>button</span><span>>on:click={() => count = count + 1}</span>Count<span><</span><span>/</span><span>button></span>
+                                <span>&lt;</span><span>button</span><span>>on:click={() => count = count + 1}</span>Count<span>&lt;</span><span>/</span><span>button></span>
                             </div>
                         </div>
-                    </code>
+                    </div>
                 </div>
-                </p>
             </section>
             <section id="AssociatedProjects">
                 <h2>Associated Projects</h2>
@@ -175,6 +175,7 @@
                 </ul>
             </section>
         </div>
+    </div>
 </body>
 
 </html>
