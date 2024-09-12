@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/wa_3.css" rel="stylesheet" />
+    <title>Encyclopedia of Svelte</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column left">
+            <img src="../img/Svelte_Logo.svg" />
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#History">History</a></li>
+                <li><a href="#Syntax">Syntax</a></li>
+                <li><a href="#AssociatedProjects">Associated Projects</a></li>
+                <li><a href="#Influence">Influence</a></li>
+                <li><a href="#Adoption">Adoption</a></li>
+                <li><a href="#SeeAlso">See Also</a></li>
+            </ul>
+
+            <h3>Reference to Original Page</h3>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Svelte">Svelte</a></li>
+            </ul>
+
+            <h3>Reference to Another Student's Page</h3>
+            <ul>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+        <div class="column right">
+            <h1>Svelte</h1>
+            <p>
+                Svelte is a free and open-source component-based front-end software framework, and language
+                created by Rich Harris and maintained by the Svelte core team members.
+                <br>
+                <br>
+                Svelte is not a monolithic JavaScript library imported by applications: instead, Svelte compiles HTML
+                templates to specialized code that manipulates the DOM directly, which may reduce the size of
+                transferred files and give better client performance. Application code is also processed by the
+                compiler, inserting calls to automatically recompute data and re-render UI elements when the data
+                they depend on is modified. This also avoids the overhead associated with runtime intermediate
+                representations, such as virtual DOM, unlike traditional frameworks (such as React and Vue) which
+                carry out the bulk of their work at runtime, i.e. in the browser.
+                <br>
+                <br>
+                The compiler itself is written in JavaScript. Its source code is licensed under MIT License and
+                hosted on GitHub. Among comparable frontend libraries, Svelte has one of the smallest bundle
+                footprints at merely 2KB.
+            </p>
+            <section id="History">
+                <h2>History</h2>
+                <hr>
+                <p>
+                    The predecessor of Svelte is Ractive.js, which Rich Harris created in 2013.
+                    <br>
+                    <br>
+                    Version 1 of Svelte was written in JavaScript and was released on 29 November 2016. It was basically
+                    Ractive with a compiler. The name Svelte was chosen by Rich Harris and his coworkers at The
+                    Guardian.
+                    <br>
+                    <br>
+                    Version 2 of Svelte was released on 19 April 2018. It set out to correct what the maintainers viewed
+                    as mistakes in the earlier version such as replacing double curly braces with single curly
+                    braces.
+                    <br>
+                    <br>
+                    Version 3 of Svelte was written in TypeScript and was released on 21 April 2019. It rethought
+                    reactivity by using the compiler to instrument assignments behind the scenes.
+                    <br>
+                    <br>
+                    The SvelteKit web framework was announced in October 2020 and entered beta in March 2021.
+                    <br>
+                    <br>
+                    Version 4 of Svelte was released on 22 June 2023. It's a maintenance release, smaller and faster
+                    than version 3. A part of this release was an internal rewrite from TypeScript back to
+                    JavaScript, with JSDoc annotations. This was met with a confusion from the developer community,
+                    which was addressed by the creator of Svelte, Rich Harris.
+                    <br>
+                    <br>
+                    Key early contributors became involved with Conduitry joining with the release of Svelte 1, Tan Li
+                    Hau joining in 2019, and Ben McCann joining in 2020. Rich Harris and Simon Holthausen joined
+                    Vercel to work on Svelte fulltime in 2022. Dominic Gannaway joined Vercel from the React core
+                    team to work on Svelte fulltime in 2023.
+                    <br>
+                    <br>
+                    SvelteKit 1.0 was released in December 2022 after two years in development.
+                </p>
+            </section>
+            <section id="Syntax">
+                <h2>Syntax</h2>
+                <hr>
+                <p>
+                    Svelte applications and components are defined in .svelte files, which are HTML files extended with
+                    templating syntax that is based on JavaScript and is similar to JSX.
+                    <br>
+                    <br>
+                    Svelte repurposes JavaScript's native labeled statement syntax $: to mark reactive statements.
+                    Top-level variables become the component's state and exported variables become the properties that
+                    the component receives. Additionally, the { JavaScript code } syntax can be used for templating in
+                    HTML elements and components, which is shown below:
+                <div class="code">
+                    <code>
+                        <span><</span><span>script</span><span>></span>
+                        <div>
+                            <code>let count = 1;</code>
+                            
+                            <code>$: doubled = count * 2;</code>
+                        </div>
+                        <span><</span><span>/</span><span>script</span><span>></span>
+                        <div>
+                            <div>
+                                
+                                <span><</span><span>p></span><span>{count} * 2 = {doubled}<</span><span>/</span><span>p></span>
+                            </div>
+                            
+                            <div>
+                                <span><</span><span>button</span><span>>on:click={() => count = count + 1}</span>Count<span><</span><span>/</span><span>button></span>
+                            </div>
+                        </div>
+                    </code>
+                </div>
+                </p>
+            </section>
+            <section id="AssociatedProjects">
+                <h2>Associated Projects</h2>
+                <hr>
+                <p>
+                    The Svelte maintainers created SvelteKit as the official way to build projects with Svelte. It is a
+                    Next.js-style framework that dramatically reduces the amount of code that gets sent to the browser.
+                    The maintainers had previously created Sapper, which was the predecessor of SvelteKit.
+                    <br>
+                    <br>
+                    The Svelte maintainers also maintain a number of integrations for popular software projects under
+                    the Svelte organization including integrations for Vite, Rollup, Webpack, TypeScript, VS Code,
+                    Chrome Developer Tools, ESLint, and prettier. A number of external projects such as Storybook
+                    have also created integrations with Svelte and SvelteKit.
+                </p>
+            </section>
+            <section id="Influence">
+                <h2>Influence</h2>
+                <hr>
+                <p>
+                    Vue.js modeled its API and single-file components after Ractive.js, the predecessor of Svelte.
+                </p>
+            </section>
+            <section id="Adoption">
+                <h2>Adoption</h2>
+                <hr>
+                <p>
+                    Svelte is widely praised by developers. Taking the top ranking in multiple large scale developer
+                    surveys, it was chosen as the Stack Overflow 2021 most loved web framework and 2020 State of JS
+                    frontend framework with the most satisfied developers.
+                    <br>
+                    <br>
+                    Svelte has been adopted by a number of high-profile web companies including The New York Times,
+                    Apple, Spotify, Radio France (French national public radio broadcaster), Square, Yahoo,
+                    ByteDance, Rakuten, Bloomberg, Reuters, Ikea, Facebook, FrontPopulaire-2024 and Brave.
+                    <br>
+                    <br>
+                    A community group of non-maintainers run the Svelte Summit conference, write a Svelte newsletter,
+                    host a Svelte podcast, and host a directory of Svelte tooling, components, and templates.
+                </p>
+            </section>
+            <section id="SeeAlso">
+                <h2>See also</h2>
+                <hr>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/JavaScript_library">JavaScript library</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Comparison_of_JavaScript-based_web_frameworks">Comparison of JavaScript frameworks</a></li>
+                </ul>
+            </section>
+        </div>
+</body>
+
+</html>

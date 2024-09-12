@@ -1,0 +1,35 @@
+.row {
+    display: flex;
+}
+
+.column {
+    padding: 20px;
+}
+
+.left {
+    width: 25%;
+}
+
+.right {
+    flex: 3
+}
+
+.code {
+    background-color: lightgrey;
+    padding: 4px;
+    font-family:monospace;
+    font-size:16px;
+}
+
+p {
+    font-size: 20px;
+    white-space:normal;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+li {
+    font-size: 20px;
+}
