@@ -64,7 +64,7 @@ Errors: find_errors_2.html
 4. Line 5, opening body tag is missing bracket
     - add > to close the opening tag
 5. Line 6, html tag in body sections
-    - remove tag
+    - remove tag, html tag is meant to enclose entire html document
 6. Line 7, opening div tag is unclosed
     - remove or add a closing tag 
 7. Line 8, strong tag unclosed  
