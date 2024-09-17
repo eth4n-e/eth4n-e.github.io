@@ -1,0 +1,88 @@
+Partner: Henry Nguyen
+
+Errors: find_errors.html
+
+1. No !DOCTYPE declaration line 1 
+    - fix by adding !DOCTYPE declaration as the first line of document
+2. Second html tag line 4 enclosed in the head tag
+    - this tag should be removed and the language attribute should be set on the first html tag
+3. Line 9, h1 is not closed
+    - fix by closing h1
+4. Line 11, closed paragraph tag but not opening paragraph tag
+    - add opening paragraph tag
+5. Line 13, ordered list is closed by an unordered list tag (line 24)
+    - make list either ordered or unordered
+6. Line 19, Item 6 enclosed by 2 closing list item tags
+    - make the first tag an open tag
+7. Line 26, paragraph without closing tag
+    - add closing tag
+8. Line 28, src for image listed as "Image.png", this image does not exist in directory
+    - use "image.jpg" (or another image) for src instead
+9. Line 28, images should have an alt attribute for accessibility
+    - add alt attribute
+10. Line 30, anchor tag closed by an img tag 
+    - close with anchor tag
+11. Line 32, opening table tag not closed
+    - close with another table tag
+12. Line 39, two td tags
+    - second td tag should be closing tag
+13. Line 46, img element has attribute source
+    - replace with src
+14. Line 46, img elements source filename does not match image in directory
+    - replace with "error.jpg"
+15. Line 48, text does not have opening (paragraph) tag
+    - add opening tag
+16. Line 48, text does not have closing paragraph tag
+    - add closing tag
+17. Line 48, text which claims to be strikethrough will not be
+    - wrap in <s> element (strikethrough) or use a text-decoration css property
+18. Line 50, paragraph tag uses bgcolor attribute which does not apply to paragraphs
+    - remove attribute, can add as a css style
+19. Line 54, unclosed comment
+    - close comment with -->
+20. Line 56, unclosed anchor tag
+    - add closing tag
+21. Line 58, tags are not nested correctly
+    - closing paragraph tag should wrap the closing em tag
+22. Line 58, em element is used to italicize not underline
+    - use <u> tag to underline
+23. Line 61, description lists do not use li element
+    - use <dt> element to indicate description item title
+24. Line 62, description lists do not use li element    
+    - use <dd> element to indicate description definitions / text
+25. Line 64, h2 tag closed by an opening h3 tag
+    - replace open h3 tag with closing h2 tag
+
+Errors: find_errors_2.html
+
+1. Line 2, no open html tag to wrap head and body sections
+    - add html tag before <head> element
+2. Line 4, h1 in head sections
+    - head is for metadata, content like h1 does not belong here, remove.
+3. Line 4/5, head tag is not closed before body tag
+    - add closing head tag before opening body tag
+4. Line 5, opening body tag is missing bracket
+    - add > to close the opening tag
+5. Line 6, html tag in body sections
+    - remove tag
+6. Line 7, opening div tag is unclosed
+    - remove or add a closing tag 
+7. Line 8, strong tag unclosed  
+    - add closing </strong> tag
+8. Line 8, paragraph tag unclosed
+    - add closing </p> after <strong> element has been closed
+9. Line 10, img uses href attribute
+    - replace href attribute with src
+10. Line 10, filename for image is misspelled
+    - replace "image 2.jpg" with "image_2.jpg"
+11. Line 10, img tags should have an alt attribute
+    - add an alt attribute
+12. Line 12, heading does not have an opening tag
+    - add <h2> 
+13. Line 14, piece of text does not have an opening paragraph tag
+    - add opening tag
+14. Line 15, <this is a comment> resembles an html tag but is not valid
+    - make into a comment by doing <!-- this is a comment -->
+15. Line 16, closing html tag is misspelled 
+    - turn </htm> to </html>
+    
