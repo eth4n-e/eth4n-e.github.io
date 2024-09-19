@@ -1,5 +1,7 @@
 Partner: Henry Nguyen
 
+Note: All line numbers refer to the original file
+
 Errors: find_errors.html
 
 1. No !DOCTYPE declaration line 1 
@@ -45,7 +47,7 @@ Errors: find_errors.html
 21. Line 58, tags are not nested correctly
     - closing paragraph tag should wrap the closing em tag
 22. Line 58, em element is used to italicize not underline
-    - use <u> tag to underline
+    - use <u> tag to underline or add style
 23. Line 61, description lists do not use li element
     - use <dt> element to indicate description item title
 24. Line 62, description lists do not use li element    
@@ -61,8 +63,9 @@ Errors: find_errors_2.html
     - head is for metadata, content like h1 does not belong here, remove.
 3. Line 4/5, head tag is not closed before body tag
     - add closing head tag before opening body tag
-4. Line 5, opening body tag is missing bracket
+4. Line 5, opening body tag is missing bracket and closing tag
     - add > to close the opening tag
+    - add closing tag
 5. Line 6, html tag in body sections
     - remove tag, html tag is meant to enclose entire html document
 6. Line 7, opening div tag is unclosed
