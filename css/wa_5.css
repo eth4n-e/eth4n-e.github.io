@@ -79,7 +79,6 @@ html {
     margin: 5em auto;
     background-color:coral;
     border: 0.2em dashed beige;
-    box-shadow: 1em 1em 1em 1em beige;
     border-radius: 1.5em;
 }
 /* Setup of card container */
@@ -108,6 +107,14 @@ html {
 /* Header / Footer styles */
 
 /* Main business card contents */
+.myCard:hover {
+    /* 1st val: x-offset */
+    /* 2nd val: y-offset */
+    /* 3rd val: blur radius */
+    /* 4th val: spread radius */
+    box-shadow: .25em .5em .5em .5em beige;
+}
+
 .myCard article img {
     max-height: 100%;
     float: right;
