@@ -7,6 +7,7 @@
   }
   
   body {
+    overflow: hidden; /* prevent scrolling */
     margin: 0;
     height: 100vh;
     position: relative;
@@ -18,23 +19,22 @@
   }
   
   article {
-    width: 210mm;
+    width: 100vw;
     height: 297mm;
     margin: 20px auto;
-    left: 120px;
     position: absolute;
   }
   
   address {
     position: absolute;
-    bottom: 120mm;
-    right: 20mm;
+    bottom: 25vh;
+    right: 5vw;
   }
   
   h1 {
     position: absolute;
-    top: 12mm;
-    left: 20mm;
+    top: 8vh;
+    left: 25vw;
     width: 128px;
     height: 128px;
     font-size: 20px;
@@ -49,21 +49,21 @@
 
   #logo {
     position: absolute;
-    top: 4rem;
-    left: 4.5rem;
+    top: 10vh;
+    left: 25vw;
     filter: drop-shadow(4px 4px 4px black)
   }
 
   #top-banner {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     top: 0;
     left: 0;
   }
 
   #bottom-banner {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     bottom: 0; 
     left: 0;
   }
