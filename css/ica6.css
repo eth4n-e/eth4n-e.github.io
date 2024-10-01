@@ -61,6 +61,6 @@
   #bottom-banner {
     position: absolute;
     width: 100vw;
-    bottom: -13px; 
+    top: 100vh; 
     left: 0;
   }
