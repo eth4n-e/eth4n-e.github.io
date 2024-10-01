@@ -8,6 +8,8 @@
   
   body {
     margin: 0;
+    height: 100vh;
+    position: relative;
     background: #FFFFFF;
     background-image: linear-gradient(#ccc, #fff, #ccc);
     border-width: 1mm;
@@ -54,13 +56,13 @@
   #top-banner {
     position: absolute;
     width: 100vw;
-    top: 4px;
+    top: 0;
     left: 0;
   }
 
   #bottom-banner {
     position: absolute;
     width: 100vw;
-    top: 100vh; 
+    bottom: 0; 
     left: 0;
   }
