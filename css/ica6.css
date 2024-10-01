@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background: #FFFFFF;
+    background-image: linear-gradient(#ccc, #fff, #ccc);
+    border-width: 1mm;
+    border-top: solid red;
+    border-bottom: solid red;
+  }
+  
+  article {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    position: relative;
+  }
+  
+  address {
+    position: absolute;
+    bottom: 8mm;
+    right: 20mm;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 12mm;
+    left: 20mm;
+    width: 128px;
+    height: 128px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 44px 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  /* Your CSS below here */
+
+  #logo {
+    position: absolute;
+    top: 4rem;
+    left: 4.5rem;
+    filter: drop-shadow(4px 4px 4px black)
+  }
+
+  #top-banner {
+    position: absolute;
+    width: 100vw;
+    top: 4px;
+    left: 0;
+  }
+
+  #bottom-banner {
+    position: absolute;
+    width: 100vw;
+    bottom: -13px; 
+    left: 0;
+  }
