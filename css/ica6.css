@@ -20,8 +20,7 @@
   
   article {
     width: 100vw;
-    height: 297mm;
-    margin: 20px auto;
+    height: 100vh;
     position: absolute;
   }
   
