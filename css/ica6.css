@@ -22,6 +22,11 @@
     width: 100vw;
     height: 100vh;
     position: absolute;
+    /* Could have implemented this way
+    background: url(top image), url(bottom image);
+    background-position: top, bottom;
+    background-repeat: no-repeat, no-repeat
+    */
   }
   
   address {
