@@ -26,14 +26,14 @@ body {
 #overlay-2 {
     position: absolute;
     left: 60vw;
-    top: 50vh;
+    top: 54vh;
 }
 
 .knife-prty {
     font-family:cursive;
-    font-weight: 200;
+    font-weight: 100;
     font-style: oblique;
     font-size: 8vmin;
     text-wrap:nowrap;
-    line-height: 1vmin;
+    line-height: 1vmax;
 }
