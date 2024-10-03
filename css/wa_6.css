@@ -34,5 +34,6 @@ body {
     font-weight: 200;
     font-style: oblique;
     font-size: 8vmin;
+    text-wrap:nowrap;
     line-height: 1vmin;
 }
