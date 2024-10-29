@@ -1,9 +1,16 @@
 document.getElementById("header").addEventListener("mouseover", function(e) {
     // add a rounded border when the header element is hovered over
-    this.style.backgroundColor = "blue";
-    this.style.borderRadius = "5%";
-    this.style.padding = "2rem";
-    this.style.color = "white";
+    if(this.style.backgroundColor) {
+        this.style.removeProperty("background-color");
+        this.style.removeProperty("border-radiues");
+        this.style.removeProperty("padding");
+        this.style.removeProperty("color");
+    } else {
+        this.style.backgroundColor = "blue";
+        this.style.borderRadius = "5%";
+        this.style.padding = "2rem";
+        this.style.color = "white";
+    }
 });
 
 document.getElementById("animated-button").addEventListener("click", function(e) {
@@ -20,6 +27,11 @@ document.getElementById("animated-button").addEventListener("click", function(e)
 })
 
 document.getElementById("filler-text").addEventListener("click", function(e) {
-    this.style.backgroundColor = "blue";
-    this.style.color = "white";
+    if(this.style.backgroundColor) {
+        this.style.removeProperty("background-color");
+        this.style.removeProperty("color");
+    } else {
+        this.style.backgroundColor = "blue";
+        this.style.color = "white";
+    }
 })
