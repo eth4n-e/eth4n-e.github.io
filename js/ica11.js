@@ -2,7 +2,9 @@ const tellFortune = function (numChildren, partnerName, geoLocation, jobTitle) {
     const text = `You will be a ${jobTitle} in ${geoLocation}, and married to ${partnerName} with ${numChildren} kids`;
     console.log(text);
 
-    document.getElementById("fortune").innerHTML = text;
+    const paragraph = document.createElement("p");
+    paragraph.textContent = text;
+    document.body.appendChild(paragraph);
 }
 
 tellFortune(2, "tim", "Denver", "Surgeon");
@@ -30,11 +32,11 @@ const reverseNumber = (number) => {
         reversedString += numAsString[i];
     }
 
-    document.getElementById("reverse_string").innerHTML = reversedString;
-
+    const div = document.getElementById("reverse_string");
+    const paragraph = document.createElement("p");
+    paragraph.textContent = `Input: ${number} --- Output: ${reversedString}`;
+    div.appendChild(paragraph);
 }
-
-
 
 reverseNumber(32243);
 reverseNumber(1234);
@@ -46,7 +48,10 @@ const alphabeticalOrder = (string) => {
 
     const sortedString = charArray.sort(compareFunc);
 
-    document.getElementById("alphabet_order").innerHTML = sortedString.join('');
+    const div = document.getElementById("alphabet_order");
+    const paragraph = document.createElement('p');
+    paragraph.textContent = `Input: ${string} --- Output: ${sortedString.join('')}`;
+    div.appendChild(paragraph);
 }
 
 alphabeticalOrder("webmaster");
@@ -59,7 +64,10 @@ const firstToUpper = function(string) {
         wordsInSentence[i] = wordsInSentence[i][0].toUpperCase() + wordsInSentence[i].substring(1);
     }
 
-    document.getElementById("first_upper").innerHTML = wordsInSentence.join(' ');
+    const div = document.getElementById("first_upper");
+    const paragraph = document.createElement('p');
+    paragraph.textContent = `Input: ${string} --- Output: ${wordsInSentence.join(' ')}`;
+    div.appendChild(paragraph);
 }
 
 firstToUpper("the quick brown fox");
