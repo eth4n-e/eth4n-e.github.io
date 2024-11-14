@@ -1,7 +1,7 @@
 const button = document.getElementById("comic-button");
 const image = document.getElementById("comic-image");
 const title = document.getElementById("comic-title");
-const date = document.getElementById("date");
+const date = document.getElementById("comic-date");
 
 const randomValueGenerator = () => {
     return Math.floor(Math.random() * 3000) + 1
@@ -10,15 +10,10 @@ const randomValueGenerator = () => {
 const comicGenerator = async () => {
     const comicNumber = randomValueGenerator();
 
-    const ENDPOINT = `https://xkcd.com/${comicNumber}/info.0.json`;
+    const ENDPOINT = `https://corsproxy.io/?https://xkcd.com/${comicNumber}/info.0.json`;
 
     try {
-        const response = await fetch(ENDPOINT, {
-            method: "GET",
-            headers: {
-                "mode": "no-cors",
-            }
-        });
+        const response = await fetch(ENDPOINT);
 
         if(response.ok) {
             return await response.json();
@@ -35,5 +30,10 @@ button.addEventListener('click', async () => {
     const comicData = await comicGenerator();
 
     console.log(comicData);
+
+    image.src = comicData.img;
+    image.alt = comicData.alt;
+    title.innerHTML = comicData.title;
+    date.innerHTML = comicData.year;
 
 })

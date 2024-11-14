@@ -1,0 +1,38 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    letter-spacing: .05em;
+    background-color:#fecdd3;
+}
+
+#container {
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#comic-title {
+    color:#500724;
+}
+
+#comic-date {
+    color:#500724;
+}
+
+#comic-button {
+    padding: 1rem;
+    margin-bottom: 5vh;
+    border-radius: 10px;
+    border: 0;
+    background-color: #500724;
+    font-weight: 600;
+    color: #fecdd3;
+    transition: padding .5s, font-size 1s; 
+}
+
+#comic-button:hover {
+    padding: 1.25rem;
+    font-size: 1.075rem;
+}
