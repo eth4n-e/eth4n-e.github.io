@@ -1,7 +1,91 @@
+"name": "",
+"subdomain": "",
+"skills": [],
+"subtitle": "",
+"collaborators": [],
+"description": "",
+"abstract": "",
+"images": [],
+"completed": 
+
 {
     "projects":[
         {
-            
+            "name": "Tune Tailor",
+            "subdomain": "tune-tailor",
+            "skills": ["React.js", "Git", "Node.js", "Express.js", "MongoDB", "Mongoose", "Tailwind", "API", "React Router", "Session Management"],
+            "subtitle": "A Desktop-Focused Application to Simplify Liked Songs Modifications for Spotify User's",
+            "collaborators": [],
+            "description": "As an avid music listener, one way or another I managed to accumulate over 11,000 liked songs on my Spotify Account. With a desire to clean up my liked songs to reflect my current music tastes and no simple, efficient way to do so through Spotify, the idea for Tune Tailor was born. The application utilizes the MERN stack and leverages the Spotify API to allow Spotify Users to make mass additions and deletions to their liked songs via their top tracks (as recognized by Spotify) and songs within their playlists.",
+            "abstract": "", 
+            "images": [],
+            "completed": false
+        },
+        {
+            "name": "Polymorphia",
+            "subdomain": "",
+            "skills": [],
+            "subtitle": "",
+            "collaborators": [],
+            "description": "",
+            "abstract": "",
+            "images": [],
+            "completed": 
+        },
+        {
+            "name": "Portland Indigenous Marketplace Project",
+            "subdomain": "",
+            "skills": [],
+            "subtitle": "",
+            "collaborators": [],
+            "description": "",
+            "abstract": "",
+            "images": [],
+            "completed": 
+        },
+        {
+            "name": "Palette5",
+            "subdomain": "",
+            "skills": [],
+            "subtitle": "",
+            "collaborators": [],
+            "description": "",
+            "abstract": "",
+            "images": [],
+            "completed": 
+        },
+        {
+            "name": "Cook County Data Science Project",
+            "subdomain": "",
+            "skills": [],
+            "subtitle": "",
+            "collaborators": [],
+            "description": "",
+            "abstract": "",
+            "images": [],
+            "completed": 
+        },
+        {
+            "name": "Goudy Type Specimen",
+            "subdomain": "",
+            "skills": [],
+            "subtitle": "",
+            "collaborators": [],
+            "description": "",
+            "abstract": "",
+            "images": [],
+            "completed": 
+        },
+        {
+            "name": "Typographic Calendar",
+            "subdomain": "",
+            "skills": [],
+            "subtitle": "",
+            "collaborators": [],
+            "description": "",
+            "abstract": "",
+            "images": [],
+            "completed": 
         }
     ]
 }
