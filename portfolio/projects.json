@@ -1,69 +1,70 @@
-"name": "",
-"subdomain": "",
-"skills": [],
-"subtitle": "",
-"collaborators": [],
-"description": "",
-"abstract": "",
-"images": [],
-"completed": 
-
 {
     "projects":[
         {
             "name": "Tune Tailor",
             "subdomain": "tune-tailor",
-            "skills": ["React.js", "Git", "Node.js", "Express.js", "MongoDB", "Mongoose", "Tailwind", "API", "React Router", "Session Management"],
+            "skills": ["React.js", "Git", "Node.js", "Express.js", "MongoDB", "Mongoose", "Tailwind", "API", "React Router", "Session Management", "Full Stack"],
             "subtitle": "A Desktop-Focused Application to Simplify Liked Songs Modifications for Spotify User's",
             "collaborators": [],
             "description": "As an avid music listener, one way or another I managed to accumulate over 11,000 liked songs on my Spotify Account. With a desire to clean up my liked songs to reflect my current music tastes and no simple, efficient way to do so through Spotify, the idea for Tune Tailor was born. The application utilizes the MERN stack and leverages the Spotify API to allow Spotify Users to make mass additions and deletions to their liked songs via their top tracks (as recognized by Spotify) and songs within their playlists.",
-            "abstract": "", 
+            "abstract": "A solo software project which strives to provide a cleaner interface for making modification to Spotify Liked Songs. The project utilizes Tailwind, React Router and the MERN stack alongside the Spotify API as a means of achieving this functionality.", 
             "images": [],
             "completed": false
         },
         {
             "name": "Polymorphia",
-            "subdomain": "",
-            "skills": [],
+            "subdomain": "polymorphia",
+            "skills": ["Java", "Object-Oriented Design", "Object-Oriented Programming", "Test Driven Development", "Design Patterns", "Behavior Driven Development", "Git", "Gradle"],
+            "subtitle": "An Object-Oriented Interactive Game Developed in Java through TDD",
+            "collaborators": [],
+            "description": "",
+            "abstract": "",
+            "images": [],
+            "completed": false
+        },
+        {
+            "name": "AI Mancala",
+            "subdomain": "AI-mancala",
+            "skills": ["Python", "Minimax", "Utility Functions", "Alpha-Beta Pruning", "Pair Programming", "Git", "Game"],
             "subtitle": "",
             "collaborators": [],
             "description": "",
             "abstract": "",
             "images": [],
-            "completed": 
+            "completed": false
         },
         {
             "name": "Portland Indigenous Marketplace Project",
             "subdomain": "",
-            "skills": [],
+            "skills": ["React.js", "Tailwind.js", "Axios", "Git", "Team Programming", "Docker"],
             "subtitle": "",
             "collaborators": [],
             "description": "",
             "abstract": "",
             "images": [],
-            "completed": 
+            "completed": true
         },
         {
             "name": "Palette5",
             "subdomain": "",
-            "skills": [],
+            "skills": ["HTML", "Bootstrap", "Handlebars.js", "Axios", "Docker", "Git", "Team Programming", "Postgres", "Node.js", "Express.js", "Agile", "API", "Full Stack"],
             "subtitle": "",
             "collaborators": [],
             "description": "",
             "abstract": "",
             "images": [],
-            "completed": 
+            "completed": true
         },
         {
             "name": "Cook County Data Science Project",
             "subdomain": "",
-            "skills": [],
+            "skills": ["Python", "NumPy", "Scikit-learn", "Pandas", "Data Exploration", "Data Analysis", "Data Cleaning"],
             "subtitle": "",
             "collaborators": [],
             "description": "",
             "abstract": "",
             "images": [],
-            "completed": 
+            "completed": true
         },
         {
             "name": "Goudy Type Specimen",
@@ -74,7 +75,7 @@
             "description": "",
             "abstract": "",
             "images": [],
-            "completed": 
+            "completed": true
         },
         {
             "name": "Typographic Calendar",
@@ -85,7 +86,7 @@
             "description": "",
             "abstract": "",
             "images": [],
-            "completed": 
+            "completed": true
         }
     ]
 }
