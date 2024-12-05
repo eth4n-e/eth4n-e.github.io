@@ -3,7 +3,7 @@
         {
             "name": "Tune Tailor",
             "subdomain": "tune-tailor",
-            "skills": ["React.js", "Git", "Node.js", "Express.js", "MongoDB", "Mongoose", "Tailwind", "API", "React Router", "Session Management", "Full Stack"],
+            "skills": ["Software", "React.js", "Git", "Node.js", "Express.js", "MongoDB", "Mongoose", "Tailwind", "API", "React Router", "Session Management", "Full Stack"],
             "subtitle": "A Desktop-Focused Application to Simplify Liked Songs Modifications for Spotify User's",
             "collaborators": [],
             "description": "As an avid music listener, one way or another I managed to accumulate over 11,000 liked songs on my Spotify Account. With a desire to clean up my liked songs to reflect my current music tastes and no simple, efficient way to do so through Spotify, the idea for Tune Tailor was born. The application utilizes the MERN stack and leverages the Spotify API to allow Spotify Users to make mass additions and deletions to their liked songs via their top tracks (as recognized by Spotify) and songs within their playlists.",
@@ -14,7 +14,7 @@
         {
             "name": "Polymorphia",
             "subdomain": "polymorphia",
-            "skills": ["Java", "Object-Oriented Design", "Object-Oriented Programming", "Test Driven Development", "Design Patterns", "Behavior Driven Development", "Git", "Gradle"],
+            "skills": ["Software", "Java", "Object-Oriented Design", "Object-Oriented Programming", "Test Driven Development", "Design Patterns", "Behavior Driven Development", "Git", "Gradle"],
             "subtitle": "An Object-Oriented Interactive Game Developed in Java through TDD",
             "collaborators": [],
             "description": "",
@@ -25,7 +25,7 @@
         {
             "name": "AI Mancala",
             "subdomain": "AI-mancala",
-            "skills": ["Python", "Minimax", "Utility Functions", "Alpha-Beta Pruning", "Pair Programming", "Git", "Game"],
+            "skills": ["Software", "Python", "Minimax", "Utility Functions", "Alpha-Beta Pruning", "Pair Programming", "Git", "Game"],
             "subtitle": "",
             "collaborators": [],
             "description": "",
@@ -35,8 +35,8 @@
         },
         {
             "name": "Portland Indigenous Marketplace Project",
-            "subdomain": "",
-            "skills": ["React.js", "Tailwind.js", "Axios", "Git", "Team Programming", "Docker"],
+            "subdomain": "portland-indigenous",
+            "skills": ["Software", "React.js", "Tailwind.js", "Axios", "Git", "Team", "Docker"],
             "subtitle": "",
             "collaborators": [],
             "description": "",
@@ -46,8 +46,8 @@
         },
         {
             "name": "Palette5",
-            "subdomain": "",
-            "skills": ["HTML", "Bootstrap", "Handlebars.js", "Axios", "Docker", "Git", "Team Programming", "Postgres", "Node.js", "Express.js", "Agile", "API", "Full Stack"],
+            "subdomain": "palette5",
+            "skills": ["Software", "HTML", "Bootstrap", "Handlebars.js", "Axios", "Docker", "Git", "Team Programming", "Postgres", "Node.js", "Express.js", "Agile", "API", "Full Stack"],
             "subtitle": "",
             "collaborators": [],
             "description": "",
@@ -57,7 +57,7 @@
         },
         {
             "name": "Cook County Data Science Project",
-            "subdomain": "",
+            "subdomain": "cook-county",
             "skills": ["Python", "NumPy", "Scikit-learn", "Pandas", "Data Exploration", "Data Analysis", "Data Cleaning"],
             "subtitle": "",
             "collaborators": [],
@@ -68,8 +68,8 @@
         },
         {
             "name": "Goudy Type Specimen",
-            "subdomain": "",
-            "skills": [],
+            "subdomain": "goudy-type",
+            "skills": ["Design", "Adobe Illustrator", "Type Design", "Creativity"],
             "subtitle": "",
             "collaborators": [],
             "description": "",
@@ -79,8 +79,8 @@
         },
         {
             "name": "Typographic Calendar",
-            "subdomain": "",
-            "skills": [],
+            "subdomain": "type-calendar",
+            "skills": ["Design", "Team", "Adobe Illustrator", "Type Design", "Creativity"],
             "subtitle": "",
             "collaborators": [],
             "description": "",

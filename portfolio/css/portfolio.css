@@ -1,7 +1,14 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: none;
+}
+
 #projects {
     display: flex;
     flex-direction: column;
-    margin: 10vh 20vw;
+    column-gap: 2vw;
+    margin: 10vh 10vw;
 }
 
 #projects a {

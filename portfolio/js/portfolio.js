@@ -1,6 +1,6 @@
 let proj;
 
-fetch('./projects.json')
+fetch('../js/projects.json')
     .then( response => {
         return response.json();
     }).then(projects => {
@@ -41,6 +41,7 @@ document.querySelectorAll("#buttons").forEach( button => {
 // rewrite this method
 // used to filter projects based on category
 function sortProjects(buttonValue) {
+    console.log(buttonValue);
     if(buttonValue == 'clear') {
         // revert back to original styling
         for(i=0; i < proj.projects.length; i++) {

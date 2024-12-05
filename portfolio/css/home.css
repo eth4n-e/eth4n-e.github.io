@@ -1,0 +1,44 @@
+body {
+    width: 100vw;
+    height: 100vw;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#container {
+    width: 50vw;
+    height: 75vh;
+    border: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0vh 25vw 10vh;
+}
+
+#header {
+    color: black;
+    font-size: 4rem;
+    line-height: .75rem;
+}
+
+#container img {
+    width: 80%;
+    height: 90%;
+    border-radius: 10%;
+    margin-bottom: 4vh;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center; 
+    column-gap: 1vw;  
+} 
+#nav > button {
+    flex-grow: 1;
+    flex-basis: 0;
+    border-radius: 5%;
+    padding: 8px 0px;
+}
