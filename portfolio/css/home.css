@@ -23,22 +23,25 @@ body {
 }
 
 #container img {
-    width: 80%;
+    width: 70%;
     height: 90%;
     border-radius: 10%;
     margin-bottom: 4vh;
+    box-shadow: -.5px 2px 4px black;
 }
 
 #nav {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 70%;
     justify-content: center; 
     column-gap: 1vw;  
 } 
 #nav > button {
     flex-grow: 1;
     flex-basis: 0;
-    border-radius: 5%;
+    border-radius: .4rem;
     padding: 8px 0px;
+    background-color: black;
+    color: white;
 }
