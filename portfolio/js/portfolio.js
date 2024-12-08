@@ -20,7 +20,7 @@ function parseData(data) {
         document.getElementById("projects").innerHTML += 
             `<a href=${project.subdomain}.html>
                 <div class="row-project" id=${project.subdomain}>
-                    <div class="proj-img"><img src=${project.images[0]}/></div>
+                    <div class="proj-img"><img src=${project.images[0]} alt=${project.subtitle}></div>
                     <div class="description">
                         <h2>${project.name}</h2>
                         <p class="subtitle">${project.subtitle}</p>
