@@ -1,0 +1,48 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#container {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin: 5vh 5vw;
+    column-gap: 5vw;
+}
+
+/* #collabs {
+    line-height: 200%;
+} */
+
+.collabs {
+    display:inline-block;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.slideshow {
+    width: 50vw;
+}
+
+.full-img {
+   position: relative;
+   display: block;
+   width: 50vw;
+   height: 50vh;
+   margin-bottom: 2vh;
+}
+
+.displayed-img {
+    object-fit:contain;
+    width: 100%;
+    height: 100%;
+}
+
+.thumb-bar img {
+    display: block;
+    float: left;
+    margin: 0vh 0.5vw;
+    cursor:pointer;
+}
