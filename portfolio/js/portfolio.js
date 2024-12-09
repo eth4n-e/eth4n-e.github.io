@@ -22,7 +22,7 @@ function parseData(data) {
                 <div class="row-project" id=${project.subdomain}>
                     <div class="proj-img"><img src=${project.images[0]} alt=${project.subtitle}></div>
                     <div class="description">
-                        <h2>${project.name}</h2>
+                        <h2 class="project-name">${project.name}</h2>
                         <p class="subtitle">${project.subtitle}</p>
                         <p>${project.abstract}</p>
                     </div>

@@ -17,6 +17,8 @@ body {
 
 h1 {
     display: inline-block;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: .125rem;
 }
 
 #buttons {
@@ -34,6 +36,8 @@ h1 {
     border: .125rem solid #0C0C0C;
     padding: 1rem .5rem;
     border-radius: .375rem;
+    font-family: "Quattrocentro", serif;
+    letter-spacing: .0625rem;
     font-size: 1rem;
     transition: background-color .5s ease-in-out, color .5s ease-in-out, font-size .5s ease-in-out, padding .5s ease-in-out, column-gap .5s ease-in-out;
 }
@@ -90,16 +94,28 @@ h1 {
     object-fit: contain;
 }
 
+.project-name {
+   font-family: "Oswald", sans-serif;
+   letter-spacing: .125rem;
+   font-size: 1.5rem;
+   line-height: .75rem; 
+}
+
 .description {
     width: 38vw;
 }
 
 .subtitle {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
     font-style: italic;
+    font-size: 1.25rem;
 }
 
 p { 
-    font-size: 16px;
+    font-family: "Quattrocentro", serif;
+    font-weight: 400;
+    font-size: 1.125rem;
     margin-top: 0px;
     line-height: 150%;
 }

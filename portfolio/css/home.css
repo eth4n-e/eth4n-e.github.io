@@ -4,6 +4,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     overflow-y: hidden;
+    background-color:#FDF7F4;
 }
 
 #container {
@@ -17,17 +18,19 @@ body {
 }
 
 #header {
-    color: black;
+    color: #0C0C0C;
+    font-family: "Oswald", sans-serif;
     font-size: 4rem;
-    line-height: .75rem;
+    line-height: .25rem;
+    margin-top: 10vh;
 }
 
 #container img {
     width: 70%;
     height: 90%;
     border-radius: 10%;
-    margin-bottom: 4vh;
-    box-shadow: -.5px 2px 4px black;
+    margin-bottom: 3vh;
+    box-shadow: -.1px 3px 4px #0C0C0C;
 }
 
 #nav {
@@ -40,8 +43,22 @@ body {
 #nav > button {
     flex-grow: 1;
     flex-basis: 0;
-    border-radius: .4rem;
-    padding: 8px 0px;
-    background-color: black;
-    color: white;
+    border-radius: .375rem;
+    border: .125rem solid #0C0C0C;
+    padding: 1rem 0.5rem;
+    background-color: #FDF7F4;
+    color: #0C0C0C;
+    font-family: "Quattrocentro", serif;
+    font-size: 1.25rem;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out, font-size .5s ease-in-out, padding .5s ease-in-out, column-gap .5s ease-in-out, letter-spacing .5s ease-in-out;
+}
+
+#nav > button:hover {
+    padding: 1.25rem .75rem;
+    column-gap: 1.75vw;
+    background-color: #0C0C0C;
+    color: #FDF7F4;
+    font-size: 1.5rem;
+    border: none;
+    letter-spacing: .125rem;
 }
