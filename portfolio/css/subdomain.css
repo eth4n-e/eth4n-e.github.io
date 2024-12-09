@@ -20,11 +20,11 @@ body {
     display: flex;
     flex-direction: row;
     margin: 1vh 5vw 5vh;
-    column-gap: 5vw;
+    column-gap: 2.5vw;
 }
 
 #project {
-    border: .125rem solid #0c0c0c;
+    /* border: .125rem solid #0c0c0c; */
     border-radius: .375rem;
     padding: 0vh 2.5vw;
 }
@@ -34,7 +34,6 @@ body {
     letter-spacing: .25rem;
     font-size: 2rem;
     line-height: 2.5rem;
-    border: 1px solid black;
 }
 
 #description {

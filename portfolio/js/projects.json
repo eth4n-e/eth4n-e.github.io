@@ -44,7 +44,13 @@
             "subtitle": "A Mobile Focused Application to Improve Vendor and Event Management for Portland Indigenous Marketplace",
             "collaborators": ["Nick Henley", "Harley Ewert", "Jeremy Varghese", "Justin Goh", "Eric Fithian"],
             "description": [
-                "As a member of Blueprint Boulder, a student organization focused on delivering software solutions to non-profits, I had the opportunity to be a team member on the Portland Indigenous Marketplace Project. The non-profit, amongst other functions, host events catered specifically for indigenous and black vendors, allowing them to showcase and sell hand-crafted products."
+                "Portland Indigenous Marketplace is a non-profit which, amongst other functions, hosts events catered specifically for indigenous and black vendors, allowing them to showcase and sell hand-crafted products. However, the non-profit lacked a consolidated platform to manage their vendors and events.",
+                "Blueprint Boulder, a student organization focused on delivering software solutions to non-profits, partnered with Portland Indigenous Marketplace to create a solution to their vendor and event management problem. As a member of Blueprint Boulder, I had the opportunity to join the team to deliver the mobile-focused solution.",
+                "The technology used on the team is as follows:",
+                "Frontend: React.js, React Router, Tailwind", 
+                "Backend: Express.js, Node.js",
+                "Database: PostgreSQL",
+                "My role on the team primarily focused on frontend development where I helped to develop reusable React components. Namely, I helped to create modal components to allow the administrator to add violations to a vendor and add events. Outside of React, the project improved my understanding of containerization via Docker and version control via GitHub."
             ],
             "abstract": "The Portland Indigenous Marketplace Project is a mobile-focused application developed using React.js, React Router, Express.js, Node.js, and PostgreSQL. Through these technologies, we sought to deliver a consolidated platform to the executives of the Portland Indigenous Marketplace non profit to improve their ability to manage vendors and events. The project is one amongst several projects created through the Blueprint Boulder organization.",
             "images": ["../img/projects/pim/editEvent.png", "../img/projects/pim/event.png"],
@@ -56,7 +62,16 @@
             "skills": ["Software", "HTML", "Bootstrap", "Handlebars.js", "Axios", "Docker", "Git", "Team Programming", "Postgres", "Node.js", "Express.js", "Agile", "API", "Full Stack"],
             "subtitle": "An Art-Focused Software Application",
             "collaborators": [],
-            "description": [],
+            "description": [
+                "Palette5 is an art-focused software application developed as the final project for University of Colorado - Boulder's Software Development Methods and Tools course. The project employed the agile software development methodology to decompose the project into smaller user stories which could be fulfilled across weekly sprints.",
+                "The tools and technologies employed are as follows:",
+                "Frontend: Handlebars.js, Bootstrap",
+                "Backend: Express.js, Node.js",
+                "Database: PostgreSQL",
+                "An important aspect of the development of Palette5 was the emphasis on programming vertically which allowed each team member to develop a feature end to end, gaining experience across the entire stack. Within the application, I contributed to the development of the discover, artworks, and individual artwork pages.", 
+                "The discovery page consolidates information about art events, artworks, user uploaded artworks, and artists. Our backend controllers interacted with our database and external APIs, namely Ticketmaster and the Art Institute of Chicago, to return data that could be dynamically rendered using Handlebars.js. A similar process is followed for creation of the artworks page. ",
+                "The individual artwork page provides a more detailed view on an artwork presented in the discover or artworks page. Here the user is offered the ability to make a comment on an artwork and add an artwork to their collection which can then be viewed in their profile."
+            ],  
             "abstract": "A group software project which sought to immerse themselves in the art world through discovery, events, and artist related pages. The application utilized Bootstrap, Handlebars.js, Express.js, Node.js, PostgreSQL to deliver dynamically rendered content, handle external API calls, and execute database operations.",
             "images": ["../img/projects/palette/collectionProfile.png", "../img/projects/palette/discoverP1.png", "../img/projects/palette/oneArtworkAdded.png", "../img/projects/palette/relatedArtComments.png"],
             "completed": true
@@ -78,7 +93,7 @@
             "skills": ["Design", "Adobe Illustrator", "Type Design", "Creativity"],
             "subtitle": "An Exhibition of the Typeface Goudy Old Style",
             "collaborators": [],
-            "description": [],
+            "description": ["A type specimen seek to explore a typeface in its entirety. Using Adobe Illustrator as my desing tool, I sought to explore the intricacies of Frederic W. Goudy's old-style, serif typeface Goudy Old Style. "],
             "abstract": "Designed using Adobe Illustrator, the Goudy Type Specimen seeks to provide an aesthetically pleasing presentation of the typeface Goudy Old Style designed by Frederic W. Goudy. The type specimen displays the core of the typeface, exhbiting all characters A-Z and 0-9 alongside several notable characters outside this grouping.",
             "images": ["../img/projects/typeSpecimen/finalGoudy.jpg", "../img/projects/typeSpecimen/firstGoudy.jpg"],
             "completed": true
