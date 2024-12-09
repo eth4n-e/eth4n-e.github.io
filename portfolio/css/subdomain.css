@@ -5,25 +5,42 @@ body {
     background-color:#FDF7F4;
 }
 
+/* .fa-arrow-left {
+    font-size: .75rem;
+    line-height: 1;
+} */
+
+#back-link {
+    text-decoration: none;
+    cursor:pointer;
+}
+
 #container {
     max-width: fit-content;
     display: flex;
     flex-direction: row;
-    margin: 5vh 5vw;
+    margin: 1vh 5vw 5vh;
     column-gap: 5vw;
+}
+
+#project {
+    border: .125rem solid #0c0c0c;
+    border-radius: .375rem;
+    padding: 0vh 2.5vw;
 }
 
 #title {
     font-family: "Oswald", sans-serif;
-    letter-spacing: .125rem;
-    font-size: 1.5rem;
+    letter-spacing: .25rem;
+    font-size: 2.75rem;
     line-height: .75rem;
 }
 
 #description {
     font-family: "Quattrocentro", serif;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color:#0c0c0c;
 }
 
 /* #collabs {
