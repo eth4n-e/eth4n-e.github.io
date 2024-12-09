@@ -25,7 +25,14 @@
             "skills": ["Software", "Java", "Object-Oriented Design", "Object-Oriented Programming", "Test Driven Development", "Design Patterns", "Behavior Driven Development", "Git", "Gradle"],
             "subtitle": "An Object-Oriented Interactive Game Developed in Java via TDD",
             "collaborators": [],
-            "description": [],
+            "description": [
+                "Polymorphia is an object-oriented interactive game developed throughout the Object-Oriented Analysis and Design course at the University of Colorado - Boulder. At its core, Polymorphia is a Maze game. The maze is composed of a varying number of rooms, each of which can contain a varying number of Adventurers, Creatures, Armor, and Food.",
+                "Development of Polymorphia was centered around the idea of Test Driven Development. The result of the software development methodology is an extensive test suite ensuring the functionality of singular methods, complex objects, and the game as a whole. Although utilized at a much smaller scale, Polymorphia employed Behavioral Driven Development via Cucumber to generate tests with simplified language to complement the JUnit test suite.",
+                "As extensions to the game occurred, the complexity of the game grew and the result is the use of several object oriented design patterns as a means of simplifying the codebase. A few (but not all) notable desing patterns used are as follows:",
+                "Factory - The Simple Factory Pattern was utilized to separate object creation from their use. The pattern was implemented to assist with character creation (characterFactory), artifact creation (artifactFactory), and command creation (commandFactory).",
+                "Builder - The Builder pattern was utilized to assist with the creation of the Maze object. The builder pattern in this context vastly improved the flexibility of maze creation by providing simple methods to add to or edit the object's configuration.",
+                "Strategy - The Strategy pattern was utilized to inject strategic behavior to characters in the game. Prior to employing the pattern, the game consisted of many character subclass (e.g. Knight) which only differed by the action behavior. The pattern became the means of replacing many of these subclasses."
+            ],
             "abstract": "An object-oriented game built in Java. The game features a maze consisting of a varying number of rooms, adventurers, creatures, and items. Development of the game was driven through testing via JUnit and expansions to the game provided opportunities to refactor and implement object-oriented design patterns to simplify complexity.",
             "images": ["../img/projects/polymorphia/apiGame.png", "../img/projects/polymorphia/apiGameMiddleTurn.png", "../img/projects/polymorphia/defaultServer.png", "../img/projects/polymorphia/mazeObserver.png", "../img/projects/polymorphia/UML.png"],
             "completed": false
@@ -36,7 +43,9 @@
             "skills": ["Software", "React.js", "Tailwind.js", "Axios", "Git", "Team", "Docker"],
             "subtitle": "A Mobile Focused Application to Improve Vendor and Event Management for Portland Indigenous Marketplace",
             "collaborators": ["Nick Henley", "Harley Ewert", "Jeremy Varghese", "Justin Goh", "Eric Fithian"],
-            "description": ["test1", "test2"],
+            "description": [
+                "As a member of Blueprint Boulder, a student organization focused on delivering software solutions to non-profits, I had the opportunity to be a team member on the Portland Indigenous Marketplace Project. The non-profit, amongst other functions, host events catered specifically for indigenous and black vendors, allowing them to showcase and sell hand-crafted products."
+            ],
             "abstract": "The Portland Indigenous Marketplace Project is a mobile-focused application developed using React.js, React Router, Express.js, Node.js, and PostgreSQL. Through these technologies, we sought to deliver a consolidated platform to the executives of the Portland Indigenous Marketplace non profit to improve their ability to manage vendors and events. The project is one amongst several projects created through the Blueprint Boulder organization.",
             "images": ["../img/projects/pim/editEvent.png", "../img/projects/pim/event.png"],
             "completed": true

@@ -16,32 +16,24 @@ fetch('../js/projects.json')
 
 function buildPage(project) {
     console.log(project);
-    const title = document.getElementById("title");
+    const title = document.getElementById("header");
 
     const titleHeader = document.createElement("h1");
+    titleHeader.id = "proj-title";
     titleHeader.innerHTML += project.name;
 
     title.appendChild(titleHeader);
     
     if (project.collaborators.length > 0) {
         const collabContainer = document.createElement("div");
-        collabContainer.id = "collabs";
+        collabContainer.id = "collab-container";
 
-        const collabs = document.createElement("h3");
-        collabs.className = "collabs";
-        collabs.innerHTML += "Collaborators:".padEnd();
+        const collabs = document.createElement("p");
+        collabs.id = "collab";
+        collabs.innerHTML += "Collaborators: " + project.collaborators.join(", ");
 
         collabContainer.appendChild(collabs);
 
-        for(i = 0; i < project.collaborators.length; i++) {
-            const collaborator = project.collaborators[i];
-
-            const collab = document.createElement("h3");
-            collab.className = "collabs";
-            i == project.collaborators.length - 1 ? collab.innerHTML += `&nbsp${collaborator}` : collab.innerHTML += `&nbsp${collaborator},`;
-
-            collabContainer.appendChild(collab);
-        };
         title.appendChild(collabContainer);
     }
 
