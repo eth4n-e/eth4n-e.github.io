@@ -2,6 +2,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    background-color:#FDF7F4;
 }
 
 #container {
@@ -10,6 +11,19 @@ body {
     flex-direction: row;
     margin: 5vh 5vw;
     column-gap: 5vw;
+}
+
+#title {
+    font-family: "Oswald", sans-serif;
+    letter-spacing: .125rem;
+    font-size: 1.5rem;
+    line-height: .75rem;
+}
+
+#description {
+    font-family: "Quattrocentro", serif;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
 }
 
 /* #collabs {
@@ -32,8 +46,12 @@ body {
    width: 50vw;
    height: 50vh;
    margin-bottom: 2vh;
-   background-color: #FDF7F4;
+   /* background-color: #efe6e1; */
+   border: .125rem solid #0c0c0c;
+   padding: 1vh 1vw;
+   border-radius: .375rem;
 }
+
 
 .displayed-img {
     object-fit:contain;
@@ -44,6 +62,17 @@ body {
 .thumb-bar img {
     display: block;
     float: left;
-    margin: 0vh 0.5vw;
+    margin: 0vh 0.25vw;
     cursor:pointer;
+    /* background-color: #efe6e1; */
+    padding: 1vh 1vw;
+    border-radius: .375rem;
+    border: .125rem solid #0c0c0c;
+    transition: background-color .5s ease-in-out, border .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.thumb-bar img:hover {
+    background-color: #efe6e1;
+    border:none;
+    padding: 1.25vh 1.25vw;
 }

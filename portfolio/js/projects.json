@@ -6,7 +6,15 @@
             "skills": ["Software", "React.js", "Git", "Node.js", "Express.js", "MongoDB", "Mongoose", "Tailwind", "API", "React Router", "Session Management", "Full Stack"],
             "subtitle": "A Desktop-Focused Application to Simplify Liked Songs Modifications for Spotify User's",
             "collaborators": [],
-            "description": ["As an avid music listener, one way or another I managed to accumulate over 11,000 liked songs on my Spotify Account. With a desire to clean up my liked songs to reflect my current music tastes and no simple, efficient way to do so through Spotify, the idea for Tune Tailor was born. The application utilizes the MERN stack and leverages the Spotify API to allow Spotify Users to make mass additions and deletions to their liked songs via their top tracks (as recognized by Spotify) and songs within their playlists."],
+            "description": [
+                "The motivation behind Tune Tailor was driven by a strong desire to clean up my Spotify liked songs. My love for music combined with years of listening resulted in my Spotify liked songs accumulating over 10,000 tracks. Wanting to condense my liked songs to more accurately reflect my current music taste and with no simple way to create mass modifications via Spotify, Tune Tailor began development.",
+                "The technology which drives the project is as follows: ", 
+                "Frontend: React.js, React Router, Tailwind",
+                "Backend: Express.js, Node.js",
+                "Database: Mongoose, MongoDB",
+                "The application heavily interacts with the Spotify API which provides an interface to requesting user profile information, request liked songs data, request playlist data, request top track data. Notably, Tune Tailor utilizes Spotify's authorization flow to register users with the application and leverages Spotify user's playlist and top track data as the primary avenues for modifications to their liked songs.",
+                "My application improves upon the capabilities of the Spotify application by providing a UI which better enables user's to make large modifications to their liked songs efficiently. For instance, for the liked songs and top track pages, each track is clickable and many tracks can be selected simultaneously allowing the user to add or remove each selected track with a simple button click. Additionally, the user is also presented a button allowing them to remove all tracks from their liked songs immediately."
+            ],
             "abstract": "A solo software project which strives to provide a cleaner interface for making modification to Spotify Liked Songs. The project utilizes Tailwind, React Router and the MERN stack alongside the Spotify API as a means of achieving this functionality.", 
             "images": ["../img/projects/tuneTailor/authorize.png", "../img/projects/tuneTailor/selectedTracks.png", "../img/projects/tuneTailor/signIn.png", "../img/projects/tuneTailor/topTracks.png"],
             "completed": false
