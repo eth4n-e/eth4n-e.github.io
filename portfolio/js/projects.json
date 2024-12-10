@@ -17,6 +17,7 @@
             ],
             "abstract": "A solo software project which strives to provide a cleaner interface for making modification to Spotify Liked Songs. The project utilizes Tailwind, React Router and the MERN stack alongside the Spotify API as a means of achieving this functionality.", 
             "images": ["../img/projects/tuneTailor/authorize.png", "../img/projects/tuneTailor/selectedTracks.png", "../img/projects/tuneTailor/signIn.png", "../img/projects/tuneTailor/topTracks.png"],
+            "icons":["fa-brands fa-github", "fa-brands fa-html5", "fa-brands fa-react", "fa-brands fa-node", "fa-solid fa-database", "fa-brands fa-spotify"],
             "completed": false
         },
         {
@@ -35,6 +36,7 @@
             ],
             "abstract": "An object-oriented game built in Java. The game features a maze consisting of a varying number of rooms, adventurers, creatures, and items. Development of the game was driven through testing via JUnit and expansions to the game provided opportunities to refactor and implement object-oriented design patterns to simplify complexity.",
             "images": ["../img/projects/polymorphia/apiGame.png", "../img/projects/polymorphia/apiGameMiddleTurn.png", "../img/projects/polymorphia/defaultServer.png", "../img/projects/polymorphia/mazeObserver.png", "../img/projects/polymorphia/UML.png"],
+            "icons": ["fa-brands fa-github", "fa-brands fa-java"],
             "completed": false
         },
         {
@@ -54,6 +56,7 @@
             ],
             "abstract": "The Portland Indigenous Marketplace Project is a mobile-focused application developed using React.js, React Router, Express.js, Node.js, and PostgreSQL. Through these technologies, we sought to deliver a consolidated platform to the executives of the Portland Indigenous Marketplace non profit to improve their ability to manage vendors and events. The project is one amongst several projects created through the Blueprint Boulder organization.",
             "images": ["../img/projects/pim/editEvent.png", "../img/projects/pim/event.png"],
+            "icons": ["fa-brands fa-react", "fa-brands fa-docker", "fa-brands fa-github"],
             "completed": true
         },
         {
@@ -74,6 +77,7 @@
             ],  
             "abstract": "A group software project which sought to immerse themselves in the art world through discovery, events, and artist related pages. The application utilized Bootstrap, Handlebars.js, Express.js, Node.js, PostgreSQL to deliver dynamically rendered content, handle external API calls, and execute database operations.",
             "images": ["../img/projects/palette/collectionProfile.png", "../img/projects/palette/discoverP1.png", "../img/projects/palette/oneArtworkAdded.png", "../img/projects/palette/relatedArtComments.png"],
+            "icons": ["fa-brands fa-github", "fa-brands fa-docker", "fa-brands fa-node", "fa-brands fa-js", "fa-brands fa-html5", "fa-brands fa-bootstrap", "fa-solid fa-database"],
             "completed": true
         },
         {
@@ -85,6 +89,7 @@
             "description": [],
             "abstract": "With a history of racial discrimination in housing policy and property taxation, the project sought to explore over 500,000 housing records in Cook County, Illinois. The exploration of the dataset culminated in the creation of several linear regression models to more accurately predict home prices within the county.",
             "images": ["../img/projects/cookCounty/linearRegression.png", "../img/projects/cookCounty/model3.png", "../img/projects/cookCounty/model3Visual.png"],
+            "icons": [],
             "completed": true
         },
         {
@@ -93,9 +98,15 @@
             "skills": ["Design", "Adobe Illustrator", "Type Design", "Creativity"],
             "subtitle": "An Exhibition of the Typeface Goudy Old Style",
             "collaborators": [],
-            "description": ["A type specimen seek to explore a typeface in its entirety. Using Adobe Illustrator as my desing tool, I sought to explore the intricacies of Frederic W. Goudy's old-style, serif typeface Goudy Old Style. "],
+            "description": [
+                "A type specimen is a design which strives to showcase a typeface in a variety of ways. Namely, it is important to display the typeface at a variety of sizes, with a variety of font styles, and in a variety of design contexts.",
+                "Using Adobe Illustrator as my design tool, I sought to explore the intricacies of Frederic W. Goudy's old-style, serif typeface Goudy Old Style. Qualities of the typeface which stood out to me include the diamond-like tittle (dot of the i), the double-story g and its ear, as well as the rounded, open bowl and distinctive tail of the Q.",
+                "The diamond-like tittle of the i became a key design motif. Utilizing the tittle, I created patterns in the upper-left and bottom-right corners to add to the aesthetic of the type specimen. Additionally, the tittle served as an enclosure for showcasing particular characters within the typeface.",
+                "The images provided represent iterations on the development of the type specimen. The first notable iteration is the type specimen with the white background which has an accompanying version with a lighter brown background. The final iteration maintains this lighter brown background, yet alters the use of the tittle, improves spacing, and more greatly emphasizes the name of the typeface and additional characters of the typeface."
+            ],
             "abstract": "Designed using Adobe Illustrator, the Goudy Type Specimen seeks to provide an aesthetically pleasing presentation of the typeface Goudy Old Style designed by Frederic W. Goudy. The type specimen displays the core of the typeface, exhbiting all characters A-Z and 0-9 alongside several notable characters outside this grouping.",
-            "images": ["../img/projects/typeSpecimen/finalGoudy.jpg", "../img/projects/typeSpecimen/firstGoudy.jpg"],
+            "images": ["../img/projects/typeSpecimen/finalGoudy.jpg", "../img/projects/typeSpecimen/firstGoudy.jpg", "../img/projects/typeSpecimen/middleGoudy.jpg"],
+            "icons":[],
             "completed": true
         },
         {
@@ -103,10 +114,14 @@
             "subdomain": "typeCalendar",
             "skills": ["Design", "Team", "Adobe Illustrator", "Type Design", "Creativity"],
             "subtitle": "A 2025 Calendar Inspired by the Record Player",
-            "collaborators": [],
-            "description": [],
+            "collaborators": ["Sarah Jeffers", "Zeke Thoreson"],
+            "description": [
+                "Our 2025 calendar is inspired by the idea of a record player. Each month is represented by a side of a record, with the main typographic focus in the center. The main typographic focus was designed based on the qualities of the respective month. For instance, June, because of its warm, sunny weather, takes on a beach theme. Further, each record is designed with a unique typeface.",
+                "The records are constructed by using Mod Podge to seal the printed display of the record onto one side of 1/8” red acrylic discs. The record player is constructed using hand-cut, sanded, and stained wood along with 3D-printed dials, year decorative embellishment, and a movable hand. As one spins the record, the movable hand places focus on the days of the month which are located on the record’s outer edges. "
+            ],
             "abstract": "Title Track 2025, our typographic calendar emphasizes the continuous motion of time underscored by record players. Each month represents a side of the record where the typographic-focused design centered around qualities of the respective month.",
             "images": ["../img/projects/typeCalendar/april.jpg", "../img/projects/typeCalendar/july.jpg", "../img/projects/typeCalendar/september.jpg", "../img/projects/typeCalendar/october.jpg"],
+            "icons": [],
             "completed": true
         }
     ]
