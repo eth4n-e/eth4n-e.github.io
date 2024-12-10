@@ -17,7 +17,7 @@
             ],
             "abstract": "A solo software project which strives to provide a cleaner interface for making modification to Spotify Liked Songs. The project utilizes Tailwind, React Router and the MERN stack alongside the Spotify API as a means of achieving this functionality.", 
             "images": ["../img/projects/tuneTailor/authorize.png", "../img/projects/tuneTailor/selectedTracks.png", "../img/projects/tuneTailor/signIn.png", "../img/projects/tuneTailor/topTracks.png"],
-            "icons":["fa-brands fa-github", "fa-brands fa-html5", "fa-brands fa-react", "fa-brands fa-node", "fa-solid fa-database", "fa-brands fa-spotify"],
+            "icons":["../icons/React.png", "../icons/Node.js.png", "../icons/Express.png", "../icons/Tailwind.png", "../icons/Mongoose.js.png", "../icons/MongoDB.png", "../icons/Figma.png", "../icons/HTML5.png", "../icons/GitHub.png"],
             "completed": false
         },
         {
@@ -36,7 +36,7 @@
             ],
             "abstract": "An object-oriented game built in Java. The game features a maze consisting of a varying number of rooms, adventurers, creatures, and items. Development of the game was driven through testing via JUnit and expansions to the game provided opportunities to refactor and implement object-oriented design patterns to simplify complexity.",
             "images": ["../img/projects/polymorphia/apiGame.png", "../img/projects/polymorphia/apiGameMiddleTurn.png", "../img/projects/polymorphia/defaultServer.png", "../img/projects/polymorphia/mazeObserver.png", "../img/projects/polymorphia/UML.png"],
-            "icons": ["fa-brands fa-github", "fa-brands fa-java"],
+            "icons": ["../icons/Java.png", "../icons/JUnit.png", "../icons/Gradle.png", "../icons/Spring.png", "../icons/Cucumber.png", "../icons/GitHub.png"],
             "completed": false
         },
         {
@@ -56,13 +56,13 @@
             ],
             "abstract": "The Portland Indigenous Marketplace Project is a mobile-focused application developed using React.js, React Router, Express.js, Node.js, and PostgreSQL. Through these technologies, we sought to deliver a consolidated platform to the executives of the Portland Indigenous Marketplace non profit to improve their ability to manage vendors and events. The project is one amongst several projects created through the Blueprint Boulder organization.",
             "images": ["../img/projects/pim/editEvent.png", "../img/projects/pim/event.png"],
-            "icons": ["fa-brands fa-react", "fa-brands fa-docker", "fa-brands fa-github"],
+            "icons": ["../icons/React.png", "../icons/Tailwind.png", "../icons/GitHub.png", "../icons/Docker.png"],
             "completed": true
         },
         {
             "name": "Palette5",
             "subdomain": "palette",
-            "skills": ["Software", "HTML", "Bootstrap", "Handlebars.js", "Axios", "Docker", "Git", "Team Programming", "Postgres", "Node.js", "Express.js", "Agile", "API", "Full Stack"],
+            "skills": ["Software", "HTML", "Bootstrap", "Handlebars.js", "Axios", "Docker", "Git", "Team", "Postgres", "Node.js", "Express.js", "Agile", "API", "Full Stack"],
             "subtitle": "An Art-Focused Software Application",
             "collaborators": [],
             "description": [
@@ -77,7 +77,7 @@
             ],  
             "abstract": "A group software project which sought to immerse themselves in the art world through discovery, events, and artist related pages. The application utilized Bootstrap, Handlebars.js, Express.js, Node.js, PostgreSQL to deliver dynamically rendered content, handle external API calls, and execute database operations.",
             "images": ["../img/projects/palette/collectionProfile.png", "../img/projects/palette/discoverP1.png", "../img/projects/palette/oneArtworkAdded.png", "../img/projects/palette/relatedArtComments.png"],
-            "icons": ["fa-brands fa-github", "fa-brands fa-docker", "fa-brands fa-node", "fa-brands fa-js", "fa-brands fa-html5", "fa-brands fa-bootstrap", "fa-solid fa-database"],
+            "icons": ["../icons/GitHub.png", "../icons/Handlebars.png", "../icons/JavaScript.png", "../icons/Bootstrap.png", "../icons/Node.js.png", "../icons/PostgresSQL.png", "../icons/Express.png", "../icons/Docker.png", "../icons/Figma.png", "../icons/HTML5.png"],
             "completed": true
         },
         {
@@ -86,10 +86,15 @@
             "skills": ["Python", "NumPy", "Scikit-learn", "Pandas", "Data Exploration", "Data Analysis", "Data Cleaning"],
             "subtitle": "Investigating Cook County Housing Data to Form Predictive Models",
             "collaborators": [],
-            "description": [],
+            "description": [
+                "As the final project for Introduction to Data Science with Probability and Statistics at the University of Colorado - Boulder, the Cook County Data Science Project emphasized a mix of exploratory data analysis, data cleaning, and the creation of predictive models. Exploration of the data was motivated by a history of racial discrimination in housing policy and property taxation wherein the property value assessment process tended to overvalue the homes of African Americans and Latino homeowners while underassessing the homes of white individuals.", 
+                "The dataset provided contained over 500,000 housing records from Cook County, Illinois. The dataset contained 61 features in total with an additional feature Sale Price to predict. Prior to modeling, it was imperative to clean the training data to ensure the data was accurate, complete and consistent. For instance, early EDA revealed inconsistencies and outliers within the Sale Price column such as thousands of homes listed with a sale price of $1 resulting in filtering of the data.",
+                "The process for building the models began with developing methods to select key features from inputted datasets. With scikit-learn, these features were utilized to fit linear regression models. The accuracy of a model was evaluated with the Root Mean Squared Error (RMSE) first on the processed training and validation sets as well as on a 5-fold cross validation for the model. The final step of the process centered around visualization, namely bar charts to compare RMSE and residual scatter plots to evaluate model predictions of Log(Sale Price) versus true Log(Sale Price).",
+                "The final model with an RMSE of around 168,000 utilized the Log Building Square Feet, One Hot Encoded Roof Material, Log Land Square Feet, One Hot Encoded Town Codes, and One Hot Encoded Property Class to predict the Sale Price of homes."
+            ],
             "abstract": "With a history of racial discrimination in housing policy and property taxation, the project sought to explore over 500,000 housing records in Cook County, Illinois. The exploration of the dataset culminated in the creation of several linear regression models to more accurately predict home prices within the county.",
-            "images": ["../img/projects/cookCounty/linearRegression.png", "../img/projects/cookCounty/model3.png", "../img/projects/cookCounty/model3Visual.png"],
-            "icons": [],
+            "images": ["../img/projects/cookCounty/linearRegression.png", "../img/projects/cookCounty/model3.png", "../img/projects/cookCounty/model3Visual.png", "../img/projects/cookCounty/dataFeatures.png", "../img/projects/cookCounty/finalModel.png"],
+            "icons": ["../icons/Python.png", "../icons/NumPy.png", "../icons/scikit-learn.png", "../icons/Pandas.png"],
             "completed": true
         },
         {
@@ -106,7 +111,7 @@
             ],
             "abstract": "Designed using Adobe Illustrator, the Goudy Type Specimen seeks to provide an aesthetically pleasing presentation of the typeface Goudy Old Style designed by Frederic W. Goudy. The type specimen displays the core of the typeface, exhbiting all characters A-Z and 0-9 alongside several notable characters outside this grouping.",
             "images": ["../img/projects/typeSpecimen/finalGoudy.jpg", "../img/projects/typeSpecimen/firstGoudy.jpg", "../img/projects/typeSpecimen/middleGoudy.jpg"],
-            "icons":[],
+            "icons":["../icons/adobeIllustrator.png"],
             "completed": true
         },
         {
@@ -121,7 +126,7 @@
             ],
             "abstract": "Title Track 2025, our typographic calendar emphasizes the continuous motion of time underscored by record players. Each month represents a side of the record where the typographic-focused design centered around qualities of the respective month.",
             "images": ["../img/projects/typeCalendar/april.jpg", "../img/projects/typeCalendar/july.jpg", "../img/projects/typeCalendar/september.jpg", "../img/projects/typeCalendar/october.jpg"],
-            "icons": [],
+            "icons": ["../icons/adobeIllustrator.png"],
             "completed": true
         }
     ]

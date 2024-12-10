@@ -48,6 +48,7 @@ function buildPage(project) {
     });
 
     populateSlideShow(project);
+    populateIcons(project);
     updateHeadTag();
 }
 
@@ -65,7 +66,7 @@ const populateSlideShow = function(project) {
         const newImage = document.createElement('img');
         newImage.setAttribute('src', image);
         newImage.setAttribute('alt', altText);
-        newImage.style.width = "10vw";
+        newImage.style.width = "7.5vw";
         newImage.style.height = "10vh";
         newImage.style.border = ""
         newImage.style.borderRadius = ".375rem";
@@ -75,6 +76,20 @@ const populateSlideShow = function(project) {
         })
         thumbBar.appendChild(newImage);
     }
+}
+
+const populateIcons = function(project) {
+    console.log(project);
+
+    const icons = document.getElementById("icons");
+    project.icons.forEach(icon => {
+        const iconElem = document.createElement("img");
+        iconElem.src = icon;
+        iconElem.alt = icon.slice(icon.lastIndexOf("/") + 1, icon.lastIndexOf("."));
+        // iconElem.style.width = 'calc(100% / ' + project.icons.length + ")";
+
+        icons.appendChild(iconElem);
+    })
 }
 
 const updateHeadTag = () => {

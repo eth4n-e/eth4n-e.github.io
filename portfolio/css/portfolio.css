@@ -120,4 +120,23 @@ p {
     line-height: 150%;
 }
 
+#return-home {
+    text-decoration: none;
+    color:#0C0C0C;
+    padding-left: .5vw;
+    font-size: 1.125rem;
+    font-family: "Oswald", sans-serif;
+}
+
+#return-home span {
+    margin-left: .125vw;
+    transition: margin-left .5s ease-in-out;
+}
+
+#return-home:hover {
+    span {
+        margin-left: .25vw;
+    }
+}
+
 
