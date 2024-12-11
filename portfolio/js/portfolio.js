@@ -22,8 +22,8 @@ function parseData(projects) {
     
     projects.forEach( project => {
         document.getElementById("projects").innerHTML += 
-            `<a href=${project.subdomain}.html>
-                <div class="row-project" id=${project.subdomain}>
+            `<a id=${project.subdomain} href=${project.subdomain}.html>
+                <div class="row-project">
                     <div class="proj-img"><img src=${project.images[0]} alt=${project.subtitle}></div>
                     <div class="description">
                         <h2 class="project-name">${project.name}</h2>
@@ -78,6 +78,7 @@ function sortProjects(buttonValue) {
         const container = document.getElementById("projects");
         container.innerHTML = "";
         visibleProjects.concat(hiddenProjects).forEach((project) => container.appendChild(project));
+
 
     } else {
         console.log("error, button value is undefined");
