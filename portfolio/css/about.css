@@ -1,0 +1,153 @@
+body {
+    width: 100vw;
+    height: 100vw;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color:#FDF7F4;
+}
+
+#project-link {
+    position: absolute;
+    top: .5vh;
+    right: .5vw;
+    text-decoration: none;
+    color:#0C0C0C;
+    padding-right: .5vw;
+    font-size: 1.125rem;
+    font-family: "Oswald", sans-serif;
+}
+
+#project-link span {
+    margin-right: .125vw;
+    transition: margin-right .5s ease-in-out;
+}
+
+#project-link:hover {
+    span {
+        margin-right: .25vw;
+    }
+}
+
+#container {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5vh 12.5vw 10vh;
+    column-gap: 2vw;
+    padding: 3vh 2vw;
+    /* background-color: #efe6e1; */
+    background-color: #f3e4dc;
+    border-radius: .375rem;
+}
+
+#personal-photo {
+    object-fit: fill;
+    width: 30vw;
+    height: 100%;
+    border-radius: .375rem;
+    box-shadow: -1px 4px 4px #d7c8bf;
+}
+
+#description {
+    color: #0C0C0C;
+}
+
+#loading {
+    font-family: "Oswald", sans-serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.75rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#name {
+    font-family: "Oswald", sans-serif;
+    font-size: 3.5rem;
+    line-height: 5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#personal-desc {
+    font-family: "Quattrocentro", serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-wrap:pretty;
+}
+
+#hobby-text {
+    margin-top: 0;
+}
+
+#hobby-text, #connect-text {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.25rem;
+}
+
+#hobby-grid {
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    justify-items: start;
+    text-align: center;
+    row-gap: 2vh;
+    column-gap: 0vw;
+}
+
+.hobby {
+    background-color: #FDF7F4;
+    width: 5vw;
+    padding: 1.5vh 1vw 0vh;
+    border-radius: .375rem;
+}
+
+.hobby i {
+    font-size: 1.25rem;
+}
+
+#connect-options {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2vw;
+}
+
+.connect-option {
+    background-color: #FDF7F4;
+    width: fit-content;
+    padding: 2vh 2vw;
+    border-radius: .375rem;
+    text-align: center;
+    font-size:2.5rem;
+    text-decoration: none;
+    color: #0C0C0C;
+    transition: font-size ease-in-out .5s, padding ease-in-out .5s;
+}
+
+.connect-option:hover {
+    font-size: 3rem;
+    padding: 1.5vh 1.5vw;
+    cursor:pointer;
+}
+
+
+
+/* Source: https://stackoverflow.com/questions/13014808/is-there-any-way-to-animate-an-ellipsis-with-css-animations */
+#loading:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    animation: ellipsis ease-in-out 1.5s infinite;
+    content: "\2026";
+    /* ascii code for the ellipsis character */
+    width: 0px;
+  }
+  
+  @keyframes ellipsis {
+    to {
+      width: 40px;
+    }
+  }

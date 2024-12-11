@@ -5,15 +5,19 @@ fetch('../js/projects.json')
         return response.json();
     }).then(projects => {
         console.log(projects);
-        proj = projects;
-        parseData(projects);
+        proj = projects.projects;
+        parseData(projects.projects);
     }).catch(err => {
         console.log(err);
     });
 
-function parseData(data) {
-    const projects = data.projects;
 
+/**
+ * 
+ * @param {Array JSON Objects} projects - array of JSON objects representing projects
+ * @yields {HTML} - returns dynamically rendered HTML using fields from each project
+ */
+function parseData(projects) {
     console.log(projects);
     
     projects.forEach( project => {
@@ -31,6 +35,7 @@ function parseData(data) {
     });
 }
 
+// adding event listeners to each sorting button
 document.querySelectorAll("#buttons").forEach( button => {
     button.addEventListener('click', e => {
         console.log(e.target.value);
@@ -38,8 +43,11 @@ document.querySelectorAll("#buttons").forEach( button => {
     })
 })
 
-// rewrite this method
-// used to filter projects based on category
+/**
+ * 
+ * @param {String} buttonValue - value denoting what to sort on
+ * @yields {HTML} - updates the styling of html elements to hide or display depending on the buttonValue
+ */
 function sortProjects(buttonValue) {
     console.log(buttonValue);
     if(buttonValue == 'clear') {

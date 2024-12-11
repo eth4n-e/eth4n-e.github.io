@@ -28,7 +28,7 @@ body {
 
 #description {
     font-family: "Quattrocentro", serif;
-    font-size: .875rem;
+    font-size: 1rem;
     line-height: 1.25rem;
     color:#0c0c0c;
 }
@@ -53,6 +53,7 @@ body {
    height: 50vh;
    margin-bottom: 2vh;
    /* background-color: #efe6e1; */
+   background-color: #f3e4dc;
    border: .125rem solid #0c0c0c;
    padding: 1vh 1vw;
    border-radius: .375rem;
@@ -84,7 +85,8 @@ body {
 }
 
 .thumb-bar img:hover {
-    background-color: #efe6e1;
+    /* background-color: #efe6e1; */
+    background-color: #f3e4dc;
     border:none;
     padding: 1.25vh 1.125vw;
 }

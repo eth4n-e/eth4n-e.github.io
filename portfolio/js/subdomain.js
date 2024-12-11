@@ -8,22 +8,30 @@ fetch('../js/projects.json')
         return response.json();
     }).then(projects => {
         // filter returns a list
+        // filter project for the one with matching subdomain
         const project = projects.projects.filter(project => project.subdomain == subdomain);
         buildPage(project[0]);
     }).catch(err => {
         console.log(err);
     })
 
+/**
+ * 
+ * @param {Object} project - JSON object representing a singular project
+ * @yields {HTML}
+ * 
+ */
 function buildPage(project) {
     console.log(project);
+    // get container for project name and collaborators
     const title = document.getElementById("header");
-
     const titleHeader = document.createElement("h1");
     titleHeader.id = "proj-title";
     titleHeader.innerHTML += project.name;
-
+    // add h1 element to header container
     title.appendChild(titleHeader);
     
+    // add collaborators to in header container if present
     if (project.collaborators.length > 0) {
         const collabContainer = document.createElement("div");
         collabContainer.id = "collab-container";
@@ -37,7 +45,20 @@ function buildPage(project) {
         title.appendChild(collabContainer);
     }
 
-    // turn into method
+
+    createProjectDescriptions(project);
+    populateSlideShow(project);
+    populateIcons(project);
+    updateHeadTag();
+}
+
+
+/**
+ * 
+ * @param {JSON Object} project - JSON object representing individual project
+ * Creates an HTML element to hold description and adds this to a description container
+ */
+const createProjectDescriptions = (project) => {
     project.description.forEach(description => {
         const paragraph = document.createElement("p");
         paragraph.className = "description";
@@ -46,12 +67,15 @@ function buildPage(project) {
         const descriptionSection = document.getElementById("description");
         descriptionSection.appendChild(paragraph);
     });
-
-    populateSlideShow(project);
-    populateIcons(project);
-    updateHeadTag();
 }
 
+/**
+ * 
+ * @param {JSON Object} project - takes in a JSON object representing an individual project
+ * @yields {HTML} 
+ * displays the first image in the project's list of images and appends remaining images to thumb bar. 
+ * Creates event listeners which allow images in the thumb bar to become the main displayed image when clicked
+ */
 const populateSlideShow = function(project) {
     const displayedImage = document.querySelector('.displayed-img');
     const thumbBar = document.querySelector(".thumb-bar");
@@ -78,6 +102,11 @@ const populateSlideShow = function(project) {
     }
 }
 
+/**
+ * 
+ * @param {JSON Object} project - takes in a JSON object representing a singular project
+ * @yields {HTML} - creates an image element for each icon associated with the project and adds to an icon container icons 
+ */
 const populateIcons = function(project) {
     console.log(project);
 
@@ -92,6 +121,9 @@ const populateIcons = function(project) {
     })
 }
 
+/**
+ * Adds google fonts to the head of each individual project's html page
+ */
 const updateHeadTag = () => {
     document.head.innerHTML += `    
     <!--Oswald Typeface-->

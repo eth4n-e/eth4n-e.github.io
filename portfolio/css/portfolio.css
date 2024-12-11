@@ -2,6 +2,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow-x: none;
+    background-color:#FDF7F4;
 }
 
 #row-header {
@@ -9,7 +10,7 @@ body {
     flex-direction: row;
     justify-content: center;
     height: 10vh;
-    margin: 5vh auto 0vh auto;
+    margin: 5vh auto 2vh auto;
     column-gap: 12vw;
     align-items: center;
     width: max-content;
@@ -30,7 +31,7 @@ h1 {
 }
 
 #buttons button {
-    /* background-color: #98a79d; */
+    /* background-color: #f3e4dc; */
     background-color: #FDF7F4;
     color: #0C0C0C;
     border: .125rem solid #0C0C0C;
@@ -39,16 +40,17 @@ h1 {
     font-family: "Quattrocentro", serif;
     letter-spacing: .0625rem;
     font-size: 1rem;
-    transition: background-color .5s ease-in-out, color .5s ease-in-out, font-size .5s ease-in-out, padding .5s ease-in-out, column-gap .5s ease-in-out;
+    transition: font-size .5s ease-in-out, padding .5s ease-in-out, column-gap .5s ease-in-out;
 }
 
 #buttons button:hover {
-    padding: 1.25rem .75rem;
+    padding: 1.125rem .75rem;
     column-gap: 1.75vw;
-    background-color: #0C0C0C;
-    color: #FDF7F4;
+    /* background-color: #0C0C0C;
+    background-color: #f3e4dc;
+    color: #0C0C0C; */
     font-size: 1.125rem;
-    border: none;
+    cursor: pointer;
 }
 
 
@@ -58,6 +60,7 @@ h1 {
     align-items: center;
     margin: 0vh 15vw 10vh 15vw;
     padding-bottom: 5vh;
+    row-gap: 2vh;
 }
 
 #projects a {
@@ -65,22 +68,20 @@ h1 {
     color: black;
     width:max-content;
     height: max-content;
+    margin-top: 0;
 }
 
 .row-project {
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
-    padding: 35px 20px 10px 20px;
-    margin-top: 2vh;
+    padding: 2vh 3vw;
     column-gap: 2vw;
-    border: none;
     border-radius: .5rem;
     justify-content: center;
 }
 
 .row-project:hover {
-    background-color: #FDF7F4;
+    background-color: #f3e4dc;
 }
 
 .proj-img {
@@ -121,6 +122,9 @@ p {
 }
 
 #return-home {
+    position: absolute;
+    top: .5vh;
+    left: .5vw;
     text-decoration: none;
     color:#0C0C0C;
     padding-left: .5vw;
