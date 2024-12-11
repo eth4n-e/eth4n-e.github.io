@@ -49,23 +49,36 @@ document.querySelectorAll("#buttons").forEach( button => {
  * @yields {HTML} - updates the styling of html elements to hide or display depending on the buttonValue
  */
 function sortProjects(buttonValue) {
+    console.log(proj);
     console.log(buttonValue);
+    
+    visibleProjects = [];
+    hiddenProjects = [];
+
     if(buttonValue == 'clear') {
         // revert back to original styling
-        for(i=0; i < proj.projects.length; i++) {
-            document.getElementById(proj.projects[i].subdomain).style.display = "flex";
+        for(i=0; i < proj.length; i++) {
+            document.getElementById(proj[i].subdomain).style.display = "flex";
         }
     } else if (buttonValue != undefined) {
-        for(i=0; i < proj.projects.length; i++) {
-            console.log(proj.projects[i]);
-            if(proj.projects[i].skills.includes(buttonValue)) {
+        for(i=0; i < proj.length; i++) {
+            console.log(proj[i]);
+            if(proj[i].skills.includes(buttonValue)) {
                 // show the project
-                document.getElementById(proj.projects[i].subdomain).style.display = "flex";
+                document.getElementById(proj[i].subdomain).style.display = "flex";
+                visibleProjects.push(document.getElementById(proj[i].subdomain));
             } else {
                 // hide the project
-                document.getElementById(proj.projects[i].subdomain).style.display = "none";
+                document.getElementById(proj[i].subdomain).style.display = "none";
+                hiddenProjects.push(document.getElementById(proj[i].subdomain));
             }
         }
+
+        // added visible / hidden projects and re-added to the project container to avoid the awkware space occurring when design and team projects were sorted
+        const container = document.getElementById("projects");
+        container.innerHTML = "";
+        visibleProjects.concat(hiddenProjects).forEach((project) => container.appendChild(project));
+
     } else {
         console.log("error, button value is undefined");
     }
